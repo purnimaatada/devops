@@ -35,21 +35,19 @@
 		<version>2.5.6</version>
 	</dependency> 
   </dependencies>
-<profiles>
-<profile>
-     <id>spring-deploy</id>
- <distributionManagement>
+
+
+
+<distributionManagement>
     <repository>
-      <id>spring-releases</id>
-      <name>spring-releases</name>
-      <url>http://ip-172-31-23-20.ap-south-1.compute.internal:8081/nexus/content/repositories/spring-releases/</url>
+      <id>mvn-spring-hosted</id>
+      <name>mvn-spring-hosted</name>
+      <url>http://ec2-52-205-99-220.compute-1.amazonaws.com:8081/repository/mvn-spring-hosted/</url>
     </repository>
     <snapshotRepository>
-      <id>spring-snapshots</id>
-      <name>spring-snapshots</name>
-      <url>http://ip-172-31-23-20.ap-south-1.compute.internal:8081/nexus/content/repositories/spring-snapshots/</url>
+      <id>maven-snapshots</id>
+      <name>maven-snapshots</name>
+      <url>http://ec2-52-205-99-220.compute-1.amazonaws.com:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
-</profile>
-  </profiles>
 </project>
